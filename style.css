@@ -1,0 +1,64 @@
+*{
+    background-color: white;
+    margin: 5px;
+    padding: 2px;
+}
+.header li a{
+    text-decoration: none;
+}
+.logo{
+    float:right;
+    height: auto;
+    width: 700px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+#Name{
+    float: left;
+    margin-top: 290px;
+    margin-left: 90px;
+    font-size: 80px;
+}
+#myself{
+    float: left;
+    margin-top: none;
+    margin-left: 90px;
+    font-size: 20px;
+}
+#focus{
+    color: #29abe2;
+}
+nav ul li{
+     display:inline;
+    align-items:center;
+    justify-content:center;
+    margin: 0 25px;
+    padding: 5px;
+   
+}
+nav ul li:hover{
+opacity: 0.7;
+}
+a{
+    font-size: large;
+    font-weight: 400;
+    color: #29abe2;
+}
+.fa {
+    float: left;
+    padding: 10px;
+    font-size: 40px;
+    width: 60px;
+    text-align:left;
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  
