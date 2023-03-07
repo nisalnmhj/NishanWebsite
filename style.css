@@ -1,34 +1,170 @@
 *{
     background-color: white;
-    margin: 5px;
-    padding: 2px;
 }
 .header li a{
     text-decoration: none;
+    font-size: x-large;
+    color: hsl(198, 76%, 52%);
+    position: relative;
+    margin: 25px; 
+    }
+
+li{
+   display:inline-block;  /*this can have height and width */
+   margin: 5px;
+}
+.header a{
+ text-decoration: none;
+  position: relative;
+  color: hsl(198, 76%, 52%);
 }
 
-nav ul li{
-     display:inline;
-    align-items:center;
-    justify-content:center;
-    margin: 0 25px;
-    padding: 5px;
-   
+.header a:hover {
+   color: hsl(198, 76%, 52%);
+  }
+
+.header a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(198, 76%, 52%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  }
+
+  .header a:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* home completed don't touch it */
+    
+section{
+    width:100%;
+    height:100vh;
+    margin: 10px;
 }
-nav ul li:hover{
-opacity: 0.7;
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  padding-top: 100px;
 }
-a{
-    font-size: large;
-    font-weight: 400;
+.img {
+    max-width: 100%;
+    max-height:100%;
+  }
+  .intro{
+    padding-left: 20px;
+  }
+#home div img {
+    height: 450px;
+    width: 425px;
+    /* background-color: black; */
+}
+
+#home div span{
+    color: #29abe2;
+    font-size: 2cm;
+}
+#home div p{
+    font-size: 0.6cm;
+}
+#home div p1{
+    font-size: 0.6cm;
+}
+#home div a{
+    text-decoration: none;
+    font-size: xx-large;
     color: #29abe2;
 }
+#home div a span{
+  font-size: large;
+  background-color:#29abe2 ;
+  border: none;
+  color:white;
+  padding: 4px 16px;
+  cursor: pointer;
+  border-radius: 80px;
+}
+#home div a span:hover{
+  background-color: #6ab2d1;
+}
+
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 30px;
+    justify-content: center;  
+    text-decoration: none;
+    margin: 3px;
+  }
+  .fa:hover{
+    background-color: #6ab2d1;
+  }
+
+  /* -------------------------------------- */
+
+#aboutme div img {
+    height: 650px;
+    width: 461px;
+    border-radius: 86px;
+    /* background-color: black; */
+}
+
+#aboutme {
+  color: #29abe2;
+}
+.topic{
+  display: flex;
+  justify-content: center;
+}
+.topic p span{
+  font-size: xx-large;
+}
+.topic p:hover {
+  color: hsl(198, 76%, 52%);
+ }
+ .topic p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  bottom: -230px;
+  left: 0;
+  background-color: hsl(198, 76%, 52%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  }
+
+  .topic p:hover::before {
+    transform: scaleX(1);
+  }
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.box div {
+  margin: 50px;
+}
+.box div p1{
+  font-size: x-large;
+}
+.box img{
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.199));
+}
+
+
+
 
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
   
 
   
