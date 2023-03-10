@@ -7,7 +7,8 @@
     <title>nishanmaharjan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
    
     <!-- <link rel="stylesheet" href="https"> -->
 </head>
@@ -18,10 +19,10 @@
         <div class="header">
            <nav>
                <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">Education</a></li>
-                   <li><a href="#">About me</a></li>
-                   <li><a href="#">My Arts</a></li> 
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#Education">Education</a></li>
+                   <li><a href="#aboutme">About me</a></li>
+                   <li><a href="#myarts">My Arts</a></li> 
                </ul>
            </nav>     
         </div>
@@ -41,7 +42,7 @@
               <a href="https://github.com/nisalnmhj" title="github" target=_blank class="fa fa-github"> </a>
               <a href="mailto:nisaln.maharzan@gmail.com" title="gmail" target=_blank class="fa fa-google"> </a>
               <a href="https://www.youtube.com/channel/UCYSWAUAqjmOpXX1DGHnmVPg" title="Youtube" target=_blank class="fa fa-youtube"> </a>
-              <a href="https://goo.gl/maps/5X8MtemogNjoZHWM6" title="my location" target=_blank class="fa fa-map-marker"></a>
+              <a href="https://goo.gl/maps/5X8MtemogNjoZHWM6" title="my location" target=_blank ><i class="fa fa-map-marker"></i></a>
               <a href="/resume/Resume 1.docx" download="Resume" title="my resume"><span>Resume</span></a>
             </p>
             </div>
@@ -56,12 +57,102 @@
                 <img src="images/about me.JPG">
             </div>
             <div class="description">
-              <p1>I am a result driven computer science student, passionate about developing user friendly software 
-                applications with excellent problem-solving skills and ability to perform well in a team. Beside this I 
-                am a self taught artist.</p1>
+              <p>I am a innovative and result driven student studying bachelors in Computer Science, passionate about developing user friendly software 
+                applications with excellent problem-solving skills and ability to perform well in a team. I started getting interest in computer science
+                after the boom of the internet world. It excited me even more when I started digging up the computer science world. Beside programming I 
+                am a self taught artist.
+            </p>
             </div>
         </div>
     </section>
 
+    <section id="Education">
+        <div class="education">
+            
+            <div class="ed">
+                <p1><span>Eduaction</span></p1>
+                <ul>
+                    <li><span>American River College</span>, Sacramento, CA <p>- Bsc in Computer Science</p></li>
+                    <li><span>Prasadi Academy</span>, Lalitpur, Nepal <p>- High School</p></li>
+                </ul>
+            </div>
+            <div class="skills"> 
+                <p1><span>Technical Skills</span></p1>
+                <ul>
+                    <li><span>Programming Skills</span> <p>- C++, Java, Html, CSS, JavaScript</p> </li>
+                    <li><span>Relevant Courses</span><p>- Calculus I,II,III, Data structure, Assembly Language, Discrete Structure</p></li>
+                </ul>
+            </div>
+        </div>
+     
+    </section>
+
+    <section id="myarts">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/GG.jpg" style="width:100%">
+            <div class="text">A girl with a pearl earing</div>
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/GF.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+       
+
+    </section>
+    
+    <footer>&copy 2023 Nishan Mahrjan 
+        <div class="foot">
+            <a href="https://www.linkedin.com/in/nishanmaharjan/" title="linkedin " target=_blank class="fa fa-linkedin"> </a>
+            <a href="https://github.com/nisalnmhj" title="github" target=_blank class="fa fa-github"> </a>
+            <a href="mailto:nisaln.maharzan@gmail.com" title="gmail" target=_blank class="fa fa-google"> </a>
+            <a href="https://www.youtube.com/channel/UCYSWAUAqjmOpXX1DGHnmVPg" title="Youtube" target=_blank class="fa fa-youtube"> </a>
+        </div>
+        
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
 </body>
 </html>

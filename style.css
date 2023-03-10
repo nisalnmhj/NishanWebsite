@@ -1,5 +1,7 @@
 *{
-    background-color: white;
+    /* background-color: white; */
+    scroll-behavior: smooth;
+   
 }
 .header li a{
     text-decoration: none;
@@ -41,17 +43,24 @@ li{
   }
 
   /* home completed don't touch it */
-    
+  i{
+    transition: .5s ease;
+  }
+    i:hover{
+      color:black;
+    }
 section{
     width:100%;
-    height:100vh;
     margin: 10px;
+}
+#home{
+  height: 100vh;
 }
 .container{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 32px;
   padding-top: 100px;
 }
 .img {
@@ -77,6 +86,7 @@ section{
 #home div p1{
     font-size: 0.6cm;
 }
+
 #home div a{
     text-decoration: none;
     font-size: xx-large;
@@ -103,17 +113,21 @@ section{
     text-decoration: none;
     margin: 3px;
   }
-  
 
   /* -------------------------------------- */
-
 #aboutme div img {
-    height: 650px;
-    width: 461px;
-    border-radius: 86px;
+  height: 12rem;
+  width: 12rem;
+  border: 1px solid #F06000;
+  border-radius: 50%;
+  margin: 0.9rem 1rem 0 2rem;
+  /* float: left; */
     /* background-color: black; */
 }
-
+img {
+  
+  object-fit: cover;
+}
 #aboutme {
   color: #29abe2;
 }
@@ -131,10 +145,10 @@ section{
   content: "";
   position: absolute;
   display: block;
-  width: 100%;
+  width: 12%;
   height: 2.5px;
-  bottom: -230px;
-  left: 0;
+  bottom: -164px;
+  left: 45%;
   background-color: hsl(198, 76%, 52%);
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -147,22 +161,156 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 10px;
+  margin-top: -38px;
+  margin-bottom: 53px;
 }
 .box div {
   margin: 50px;
 }
-.box div p1{
+.description p{
   font-size: x-large;
+  text-align: justify;
 }
 .box img{
   filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.199));
 }
 
+/* ___________________________________________________________________________________________ */
 
 
+.education{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom:63px;
+  
+}
 
+div .ed{
+  height: 200px;
+  width: 427px;
+  padding: 47px;
+  /* border: 5px  solid rgb(16.08%, 67.06%, 88.63%); */
+  margin: 0px;
   
   
-
+}
+.ed li{
+  border-left: 5px  solid rgb(117, 225, 249);
+  padding: 5px;
+}
+.skills li{
+  border-left: 5px  solid rgb(117, 225, 249);
+  padding: 5px;
+}
+div .skills{
+  width: 427px;
+  padding: 47px;
+  /* border: 5px  solid rgb(16.08%, 67.06%, 88.63%); */
+  margin: 0px;
+  height: 200px;
+}
+ .education p1 span{
+  font-size: xx-large;
+  color: #29abe2;
   
+}
+.education div li span{
+  font-size: larger;
+  font-weight: 600;
+}
+.education div li{
+  font-size: large;
+}
+
+
+
+
+footer{
+  background-color: #29abe2;
+  color: white;
+  height: 40px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+footer div{
+  background-color: #29abe2;
+  margin-left: 75px;
+}
+footer .fa{
+  font-size: 20px;
+  background-color: #29abe2;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin-left: 20px;
+  color: white;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display:none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:  white;
+  font-size: 40px;
+  transition: 0.8s ease;
+}
+.next {
+  right: 8px;
+  border-radius: 21px 0 0 21px;
+}
+.prev{
+  left:8px;
+  border-radius: 0 21px 21px 0;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:  #71c9ee;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:  #29abe2;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
