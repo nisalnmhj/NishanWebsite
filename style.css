@@ -6,7 +6,6 @@
 .header li a{
     text-decoration: none;
     font-size: x-large;
-    color: hsl(198, 76%, 52%);
     position: relative;
     margin: 25px; 
     }
@@ -47,7 +46,7 @@ li{
     transition: .5s ease;
   }
     i:hover{
-      color:black;
+      color:rgb(163, 207, 236);
     }
 section{
     width:100%;
@@ -167,6 +166,7 @@ img {
 .box div {
   margin: 50px;
 }
+
 .description p{
   font-size: x-large;
   text-align: justify;
@@ -241,6 +241,9 @@ footer div{
   background-color: #29abe2;
   margin-left: 75px;
 }
+.foot .fa:hover{
+  color: rgb(163, 207, 236);;
+}
 footer .fa{
   font-size: 20px;
   background-color: #29abe2;
@@ -258,7 +261,17 @@ footer .fa{
 .mySlides {
   display:none;
 }
+#myarts{
+  margin-top: 133px;
+}
 
+.arts{
+  justify-content: center;
+  display: flex;
+  margin: 15px;
+  font-size: xx-large;
+  color: #29abe2;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -273,6 +286,12 @@ footer .fa{
 .next {
   right: 8px;
   border-radius: 21px 0 0 21px;
+}
+.next:hover{
+  color: #29abe2;
+}
+.prev:hover{
+  color: #29abe2;
 }
 .prev{
   left:8px;
@@ -313,4 +332,30 @@ footer .fa{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .header li a{
+    margin:2px;
+  }
+ .box{
+  flex-direction: column;
+ }
+ .education{
+  flex-direction: column;
+ }
+ .logo{
+  display: none;
+ }
+ div.skills{
+  width: 352px;
+ }
+ div.ed{
+  width: 352px;
+ }
+ footer{
+  height: 75px;
+ }
 }
