@@ -7,7 +7,7 @@
     <title>nishanmaharjan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
    
     <!-- <link rel="stylesheet" href="https"> -->
@@ -35,19 +35,21 @@
                 <img class = "logo" src="/images/nisalnlogowebsite.png">
             </div>
             <div class = "intro">
-              <p id="Name">I am <span id="focus"> Nishan Maharjan.</span></p>
+              <p id="Name">I am <span id="focus"></span></p>
               <p1 id="myself">Computer Science Student | Self learned Artist   </p1>  
               <p>
               <a href="https://www.linkedin.com/in/nishanmaharjan/" title="linkedin " target=_blank > <i class="fa fa-linkedin"></i> </a>
               <a href="https://github.com/nisalnmhj" title="github" target=_blank> <i class="fa fa-github"> </i></a>
               <a href="mailto:nisaln.maharzan@gmail.com" title="gmail" target=_blank> <i class="fa fa-google"> </i> </a>
               <a href="https://www.youtube.com/channel/UCYSWAUAqjmOpXX1DGHnmVPg" title="Youtube" target=_blank> <i class="fa fa-youtube"> </i> </a>
-              <a href="https://goo.gl/maps/5X8MtemogNjoZHWM6" title="my location" target=_blank ><i class="fa fa-map-marker"></i></a>
+              <a href="https://www.google.com/maps/place/Carmichael,+CA+95608" title="my location" target=_blank ><i class="fa fa-map-marker"></i></a>
               <a href="/resume/Resume 1.docx" download="Resume" title="my resume"><span>Resume</span></a>
             </p>
             </div>
             
         </div>  
+     
+        
     </section>
 
     <section id="aboutme">
@@ -70,7 +72,7 @@
         <div class="education">
             
             <div class="ed">
-                <p1><span>Eduaction</span></p1>
+                <p1><span>Education</span></p1>
                 <ul>
                     <li><span>American River College</span>, Sacramento, CA <p>- Bsc in Computer Science</p></li>
                     <li><span>Prasadi Academy</span>, Lalitpur, Nepal <p>- High School</p></li>
@@ -143,7 +145,8 @@
 
     </section>
     
-    <footer>&copy 2023 Nishan Mahrjan 
+    <div class="footer">
+        <p>&copy 2023 Nishan Maharjan </p>
         <div class="foot">
             <a href="https://www.linkedin.com/in/nishanmaharjan/" title="linkedin " target=_blank class="fa fa-linkedin"> </a>
             <a href="https://github.com/nisalnmhj" title="github" target=_blank class="fa fa-github"> </a>
@@ -151,9 +154,12 @@
             <a href="https://www.youtube.com/channel/UCYSWAUAqjmOpXX1DGHnmVPg" title="Youtube" target=_blank class="fa fa-youtube"> </a>
         </div>
         
-    </footer>
+    </div>
 
     <script>
+        (function text(){
+            console.log("nishan");
+        })();
         let slideIndex = 1;
         showSlides(slideIndex);
         
@@ -179,6 +185,28 @@
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
+        }
+        var ts = document.getElementById("focus");
+        
+        var array = ["N","I","S","H","A","N"," ","M","A","H","A","R","J","A","N"];
+            
+        // for(var i = 0; i < array.length; i++) {
+                
+            
+            //     setTimeout((i) => {
+            //         ts.innerHTML+=array[i];
+            //     }, 3000);
+            //     }
+        var i = 0;
+        myloop(i);
+        function myloop(i){
+            setTimeout(() => {
+                ts.innerHTML+=array[i];
+                i++;
+                if(i<15){
+                    myloop(i);
+                }
+            }, 500);
         }
         </script>
         
