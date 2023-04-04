@@ -1,10 +1,10 @@
 *{
-    /* background-color: white; */
     scroll-behavior: smooth;
-   
 }
 body{
   margin:0;
+  background-image:url(../images/doodle21.png),linear-gradient(aliceblue,rgb(216, 225, 232));
+  background-size: 70%;
 }
 .header li a{
     text-decoration: none;
@@ -13,8 +13,8 @@ body{
     margin: 25px; 
     }
 
-li{
-   display:inline-block;  /*this can have height and width */
+#Education li,.header li{
+   display:inline-block;  
    margin: 5px;
 }
 .header a{
@@ -68,6 +68,7 @@ section{
 .img {
     max-width: 100%;
     max-height:100%;
+   
   }
   .intro{
     padding-left: 20px;
@@ -149,8 +150,8 @@ img {
   display: block;
   width: 12%;
   height: 2.5px;
-  bottom: -164px;
-  left: 45%;
+  bottom: -151px;
+  left: 44%;
   background-color: hsl(198, 76%, 52%);
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -186,18 +187,14 @@ img {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10px;
-  margin-bottom:63px;
-  
-}
+  margin-bottom:190px;
+  }
 
 div .ed{
   height: 200px;
   width: 427px;
-  padding: 47px;
-  /* border: 5px  solid rgb(16.08%, 67.06%, 88.63%); */
+  /* padding-bottom: 100px; */
   margin: 0px;
-  
-  
 }
 .ed li{
   border-left: 5px  solid rgb(117, 225, 249);
@@ -209,8 +206,7 @@ div .ed{
 }
 div .skills{
   width: 427px;
-  padding: 47px;
-  /* border: 5px  solid rgb(16.08%, 67.06%, 88.63%); */
+  /* padding-bottom: 100px; */
   margin: 0px;
   height: 200px;
 }
@@ -226,10 +222,26 @@ div .skills{
 .education div li{
   font-size: large;
 }
+/* ---------------------------------------------------------------------------------------------------------------- */
+#experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#experience p{
+  font-size:xx-large;
+  color: #29abe2;
+}
+#experience li{
+  font-size: large;
+}
+.card{
+  margin-bottom: 27px;
+} 
 
 
-
-
+/* ----------------------------------------------------------------------------------------------------------------------- */
 .footer{
   background-color: #29abe2;
   color: white;
@@ -243,22 +255,13 @@ div .skills{
 .footer p{
   margin:0;
 }
-/* footer div{
-  background-color: #29abe2;
-  
-} */
+
 .foot .fa{
   color: white;
 }
 .foot .fa:hover{
   color: rgb(163, 207, 236);;
 }
-/* .footer .fa{
-  /* font-size: 20px; */
-  /* padding-bottom: 10px; */
-  /* padding-left: 25px;
-  margin-left: 20px; */
-
 
 .slideshow-container {
   max-width: 1000px;
@@ -278,6 +281,7 @@ div .skills{
   margin: 15px;
   font-size: xx-large;
   color: #29abe2;
+  margin-bottom: 27px;
 }
 .prev, .next {
   cursor: pointer;
@@ -307,7 +311,7 @@ div .skills{
 .text {
   color: white;
   font-size: 20px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -349,6 +353,7 @@ div .skills{
 
 
 @media only screen and (max-width: 600px) {
+
   .container{
     flex-direction: column;
   }
@@ -360,6 +365,8 @@ div .skills{
  }
  .education{
   flex-direction: column;
+  justify-content: none;
+
  }
  .logo{
   display: none;
@@ -370,9 +377,18 @@ div .skills{
  div.ed{
   width: 352px;
  }
- /* .footer{
-  height: 75px;
+ #experience h2{
+  margin: 10px;
  }
-} */
+ 
 }
-/* --------------------------------------------------------- */
+/* .font{
+  /* display: flex; */
+  /* position: fixed; */
+  /* left: 32px; */
+  /* color:#29abe2; 
+  bottom: 95px;
+  right: 28px; */
+  /* width: 50px;
+  height:50px; */
+  /* font-size: 50px; */
