@@ -191,8 +191,8 @@ img {
   }
 
 div .ed{
-  height: 200px;
-  width: 427px;
+  height: 391px;
+  width: 375.2px;
   /* padding-bottom: 100px; */
   margin: 0px;
 }
@@ -205,10 +205,10 @@ div .ed{
   padding: 5px;
 }
 div .skills{
-  width: 427px;
+  width: 375.2px;
   /* padding-bottom: 100px; */
   margin: 0px;
-  height: 200px;
+  /* height: 200px; */
 }
  .education p1 span{
   font-size: xx-large;
@@ -222,6 +222,7 @@ div .skills{
 .education div li{
   font-size: large;
 }
+
 /* ---------------------------------------------------------------------------------------------------------------- */
 #experience{
   display: flex;
@@ -353,7 +354,6 @@ div .skills{
 
 
 @media only screen and (max-width: 600px) {
-
   .container{
     flex-direction: column;
   }
@@ -371,14 +371,20 @@ div .skills{
  .logo{
   display: none;
  }
- div.skills{
-  width: 352px;
- }
- div.ed{
-  width: 352px;
+
+
+ .ed{
+  width: 375.2px;
+  margin-bottom: 3rem;
  }
  #experience h2{
   margin: 10px;
+ }
+ .card{
+  margin: 3px;
+ }
+ .footer p{
+  font-size: medium;
  }
  
 }
